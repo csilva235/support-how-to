@@ -362,7 +362,7 @@ If you followed these steps, you should see something similar to the following o
 
 1.  Open the new SSH port by running the following command:
 
-        sudo iptables iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2222 -j ACCEPT
+        sudo iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2222 -j ACCEPT
         sudo service iptables-save
 
     Replace `2222` with the port that you used for the SSH daemon.
